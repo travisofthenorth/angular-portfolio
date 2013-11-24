@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="portfolioApp">
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"></link>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+  </head>
+  <body>
+    <div id="body">
+      <header>
+        <div id="logo">
+          <a href="/">
+            <img src="img/logo.png" alt="A Showcase Of Things That I Made">
+          </a>
+        </div>
+        <div id="headerNav">
+          <nav class="header-nav">
+            <ul>
+              <li>WORK</li>
+              <li>ABOUT</li>
+              <li>PRESS</li>
+              <li>CONTACT</li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="content" ng-controller="ContentController">
+        <ul>
+          <li ng-repeat="video in videos">
+            <a href="{{video.url}}">
+              <img src="{{video.thumbnail}}" alt="{{video.alt}}" />
+            </a>
+            <p>{{video.name}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+/* line 1, ../sass/styles.scss */
+#body {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+/* line 6, ../sass/styles.scss */
+li {
+  list-style-type: none;
+}
