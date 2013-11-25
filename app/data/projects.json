@@ -1,0 +1,44 @@
+[
+    {
+        "id": "video-1",
+        "name": "Video 1!",
+        "thumbnail": "img/videothumb.jpg",
+        "url": "https://www.youtube.com/watch?v=0dJu1Jj7VTw",
+        "alt": "A cool video"
+    },
+    {
+        "id": "video-2",
+        "name": "Video 2",
+        "thumbnail": "img/videothumb.jpg",
+        "url": "https://www.youtube.com/watch?v=0dJu1Jj7VTw",
+        "alt": "A cool video"
+    },
+    {
+        "id": "video-3",
+        "name": "Video 3",
+        "thumbnail": "img/videothumb.jpg",
+        "url": "https://www.youtube.com/watch?v=0dJu1Jj7VTw",
+        "alt": "A cool video"
+    },
+    {
+        "id": "video-4",
+        "name": "Video 4",
+        "thumbnail": "img/videothumb.jpg",
+        "url": "https://www.youtube.com/watch?v=0dJu1Jj7VTw",
+        "alt": "A cool video"
+    },
+    {
+        "id": "video-5",
+        "name": "Video 5",
+        "thumbnail": "img/videothumb.jpg",
+        "url": "https://www.youtube.com/watch?v=0dJu1Jj7VTw",
+        "alt": "A cool video"
+    },
+    {
+        "id": "video-6",
+        "name": "Video 6",
+        "thumbnail": "img/videothumb.jpg",
+        "url": "https://www.youtube.com/watch?v=0dJu1Jj7VTw",
+        "alt": "A cool video"
+     }
+]

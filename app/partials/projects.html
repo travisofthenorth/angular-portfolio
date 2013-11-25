@@ -1,0 +1,10 @@
+<div class="content" ng-controller="ProjectsController">
+  <ul>
+    <li ng-repeat="project in projects">
+      <a href="#/work/{{project.id}}">
+        <img ng-src="{{project.thumbnail}}" alt="{{project.alt}}" />
+      </a>
+      <p>{{project.name}}</p>
+    </li>
+  </ul>
+</div>
