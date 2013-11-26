@@ -1,4 +1,4 @@
-<div class="content" ng-controller="ProjectListCtrl">
+<div class="content" ng-controller="ProjectDetailCtrl">
   <ul>
     <li ng-repeat="project in projects">
       <a href="#/work/{{project.id}}">
@@ -7,4 +7,7 @@
       <p>{{project.name}}</p>
     </li>
   </ul>
+  <h2>{{project.name}}</h2>
+  <div ng-bind-html="embedUrl"></div>
+  <p>{{project.description}}</p>
 </div>

@@ -2,6 +2,7 @@
 
 var portfolioApp = angular.module('portfolioApp', [
   'ngRoute',
+  'ngSanitize',
   'portfolioControllers'
 ]);
 
@@ -10,11 +11,11 @@ portfolioApp.config(['$routeProvider',
     $routeProvider.
       when('/work', {
         templateUrl: 'partials/projects.html',
-        controller: 'ProjectsController'
+        controller: 'ProjectListCtrl'
       }).
       when('/work/:projectId', {
         templateUrl: 'partials/project-detail.html',
-        controller: 'PhoneDetailCtrl'
+        controller: 'ProjectDetailCtrl'
       }).
       otherwise({
         redirectTo: '/work'
