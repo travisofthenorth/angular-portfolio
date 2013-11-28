@@ -5,9 +5,14 @@
 
 li {list-style-type: none;}
 
+#header {
+    border-bottom: 1px solid #333333;
+}
+
 #headerNav {
     text-align: center;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 @mixin inline-list($margin-right) {
@@ -19,4 +24,11 @@ li {list-style-type: none;}
 
 .header-nav li { @include inline-list(40px); }
 
-.content li { @include inline-list(20px); }
+.content li { 
+    @include inline-list(15px);
+    margin-left: 15px; 
+}
+
+.content ul {
+    padding: 0;
+}
