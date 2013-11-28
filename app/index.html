@@ -1,12 +1,14 @@
 <!doctype html>
-<html ng-app="portfolioApp">
+<html ng-app="portfolioApp" ng-controller="AppCtrl">
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"></link>
     <script src="js/angular.min.js"></script>
     <script src="lib/angular/angular-route.js"></script>
     <script src="lib/angular/angular-sanitize.min.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
   </head>
   <body>
     <div id="body">
@@ -19,15 +21,20 @@
         <div id="headerNav">
           <nav class="header-nav">
             <ul>
-              <li>WORK</li>
-              <li>ABOUT</li>
-              <li>PRESS</li>
-              <li>CONTACT</li>
+              <li ng-repeat="navItem in navItems">
+                <a href="{{navItem.href}}">{{navItem.text}}</a>
+              </li>
             </ul>
           </nav>
         </div>
       </header>
       <div ng-view></div>
+      <footer>
+        <div>
+          <p>All works &copy; 2012 Some Dude</p>
+          <a href=""
+        </div>
+      </footer>
     </div>
   </body>
 </html>

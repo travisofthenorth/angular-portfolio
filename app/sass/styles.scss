@@ -4,3 +4,19 @@
 }
 
 li {list-style-type: none;}
+
+#headerNav {
+    text-align: center;
+    width: 100%;
+}
+
+@mixin inline-list($margin-right) {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    margin-right: $margin-right;
+}
+
+.header-nav li { @include inline-list(40px); }
+
+.content li { @include inline-list(20px); }

@@ -8,3 +8,25 @@
 li {
   list-style-type: none;
 }
+
+/* line 8, ../sass/styles.scss */
+#headerNav {
+  text-align: center;
+  width: 100%;
+}
+
+/* line 20, ../sass/styles.scss */
+.header-nav li {
+  display: inline-block;
+  float: none;
+  text-align: center;
+  margin-right: 40px;
+}
+
+/* line 22, ../sass/styles.scss */
+.content li {
+  display: inline-block;
+  float: none;
+  text-align: center;
+  margin-right: 20px;
+}
