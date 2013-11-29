@@ -1,4 +1,9 @@
 <div class="content" ng-controller="AboutCtrl">
   <h1>{{title}}</h1>
   <h3>I am more than a man</h3>
+  <div class="left about" ng-bind-html="bioHtml"></div>
+  <div class="right">
+    <img ng-src="{{image}}"/>
+  </div>
+  <div class="clear"/>
 </div>

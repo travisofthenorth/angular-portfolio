@@ -2,6 +2,8 @@
 <html ng-app="portfolioApp" ng-controller="AppCtrl">
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"></link>
+    <!--link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css"></link-->
+    <link rel="stylesheet" type="text/css" href=""></link>
     <script src="js/angular.min.js"></script>
     <script src="lib/angular/angular-route.js"></script>
     <script src="lib/angular/angular-sanitize.min.js"></script>
@@ -29,10 +31,9 @@
         </div>
       </header>
       <div ng-view></div>
-      <footer>
+      <footer id="footer">
         <div>
-          <p>All works &copy; 2012 Some Dude</p>
-          <a href=""
+          <p ng-bind-html="copyrightText"></p>
         </div>
       </footer>
     </div>
