@@ -1,0 +1,22 @@
+{
+    "events": [
+        {
+            "date": "12/5/13",
+            "name": "Whistler Film Festival",
+            "url": "http://www.whistler.com/wff/",
+            "description": "This will be mildly entertaining"
+        },
+        {
+            "date": "12/30/13",
+            "name": "Homage To Mortal Kombat",
+            "url": "http://www.bing.com/",
+            "description": "The greatest film ever made"
+        },
+        {
+            "date": "1/5/14",
+            "name": "Space Jam/Schindler's List Marathon",
+            "url": "https://www.facebook.com",
+            "description": "Two great films duke it out for best film ever made, behind Mortal Kombat"
+        }
+    ]
+}

@@ -24,6 +24,11 @@ li {
     margin-right: $margin-right;
 }
 
+@mixin block-list() {
+    display: block;
+    text-align: left;
+}
+
 .header-nav li { @include inline-list(40px); }
 
 .content li { 
@@ -50,9 +55,13 @@ li {
 }
 
 .about li {
+    @include block-list();
     list-style-type: disc;
-    display: block;
-    text-align: left;
+}
+
+.event {
+    width: 100%;
+    @include block-list();
 }
 
 #footer {

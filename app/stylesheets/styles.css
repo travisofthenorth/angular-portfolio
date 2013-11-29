@@ -21,7 +21,7 @@ li {
   margin-bottom: 10px;
 }
 
-/* line 27, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 .header-nav li {
   display: inline-block;
   float: none;
@@ -29,7 +29,7 @@ li {
   margin-right: 40px;
 }
 
-/* line 29, ../sass/styles.scss */
+/* line 34, ../sass/styles.scss */
 .content li {
   display: inline-block;
   float: none;
@@ -38,36 +38,43 @@ li {
   margin-left: 15px;
 }
 
-/* line 34, ../sass/styles.scss */
+/* line 39, ../sass/styles.scss */
 .content ul {
   padding: 0;
 }
 
-/* line 38, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 .left {
   float: left;
   width: 50%;
 }
 
-/* line 43, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .right {
   float: right;
   width: 50%;
 }
 
-/* line 48, ../sass/styles.scss */
+/* line 53, ../sass/styles.scss */
 .clear {
   clear: both;
 }
 
-/* line 52, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 .about li {
+  display: block;
+  text-align: left;
   list-style-type: disc;
+}
+
+/* line 62, ../sass/styles.scss */
+.event {
+  width: 100%;
   display: block;
   text-align: left;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 #footer {
   margin-top: 10px;
   border-top: 1px solid #333333;
