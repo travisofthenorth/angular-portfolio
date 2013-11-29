@@ -47,7 +47,7 @@ portfolioControllers.controller('ProjectDetailCtrl', ['$scope', 'Portfolio', '$s
 portfolioControllers.controller('AboutCtrl', ['$scope', 'Portfolio', '$sce',
   function ($scope, Portfolio, $sce) {
     $scope.title = "About";
-    var about = Portfolio.get({dataId: 'about'}, function (data) {
+    Portfolio.get({dataId: 'about'}, function (data) {
       $scope.image = data.image;
       $scope.bioHtml = data.bio ? $sce.trustAsHtml(data.bio) : '';
     });
@@ -63,5 +63,10 @@ portfolioControllers.controller('PressCtrl', ['$scope', 'Portfolio',
 portfolioControllers.controller('ContactCtrl', ['$scope', 'Portfolio',
   function ($scope, Portfolio) {
     $scope.title = "Contact";
+    Portfolio.get({dataId: 'contact'}, function (data) {
+      $scope.emailAddress = data.email;
+      $scope.emailHref = 'mailto:' + data.email;
+      $scope.text = data.text;
+    });
   }
 ]);
