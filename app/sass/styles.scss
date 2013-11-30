@@ -1,3 +1,5 @@
+@import 'mixins';
+
 #body {
     max-width: 1000px;
     margin: 50px auto;
@@ -17,18 +19,6 @@ li {
     margin-bottom: 10px;
 }
 
-@mixin inline-list($margin-right) {
-    display: inline-block;
-    float: none;
-    text-align: center;
-    margin-right: $margin-right;
-}
-
-@mixin block-list() {
-    display: block;
-    text-align: left;
-}
-
 .header-nav li { @include inline-list(40px); }
 
 .content li { 
@@ -38,6 +28,12 @@ li {
 
 .content ul {
     padding: 0;
+}
+
+.project {
+    img {
+        max-width: 300px;
+    }
 }
 
 .left {
@@ -57,6 +53,17 @@ li {
 .about li {
     @include block-list();
     list-style-type: disc;
+}
+
+.album {
+    li {
+        @include block-list();
+        float: center;
+        clear: both;
+    }
+    img {
+        max-width: 1000px;
+    }
 }
 
 .event {

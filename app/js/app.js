@@ -1,3 +1,9 @@
+/**
+ * angular-portfolio: A simple OOTB, configurable portfolio site. Customize it to your needs without
+ * writing code! Or easily add a new route/controller for your needs. Check out github for more details:
+ * https://github.com/travisofthenorth/angular-portfolio
+ */
+
 'use strict';
 
 var portfolioApp = angular.module('portfolioApp', [

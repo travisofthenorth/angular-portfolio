@@ -1,13 +1,24 @@
 <div class="content" ng-controller="ProjectDetailCtrl">
-  <ul>
-    <li ng-repeat="project in projects">
-      <a href="#/work/{{project.id}}">
-        <img ng-src="{{project.thumbnail}}" alt="{{project.alt}}" />
-      </a>
-      <p>{{project.name}}</p>
-    </li>
-  </ul>
   <h2>{{project.name}}</h2>
-  <div ng-bind-html="embedHtml"></div>
-  <p>{{project.description}}</p>
+  <div ng-switch on="project.type">
+    <div ng-switch-when="photo_album" class="album">
+      <p>{{project.description}}</p>
+      <div class="clear"></div>
+      <ul>
+        <li class="photo" ng-repeat="photo in project.photos">
+          <img ng-src="{{photo.img}}" alt="{{project.alt}}" />
+          <p>{{photo.description && photo.description || ''}}</p>
+        </li>
+      </ul>
+    </div>
+    <div ng-switch-when="video">
+      <div ng-bind-html="embedHtml"></div>
+      <p>{{project.description}}</p>
+    </div>
+    <div ng-switch-when="photo">
+      <p>{{project.description}}</p>
+      <div class="clear"></div>
+      <img ng-src="{{project.image}}"/>
+    </div>
+  </div>
 </div>

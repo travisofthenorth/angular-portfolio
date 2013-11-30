@@ -5,6 +5,7 @@ var portfolioConfig = angular.module('portfolioConfig', []);
 /**
  *
  */
+portfolioConfig.title = "My Portfolio";
 portfolioConfig.navItems = [
                               {'text': 'WORK', 'href': '#/work/'},
                               {'text': 'ABOUT', 'href': '#/about/'},

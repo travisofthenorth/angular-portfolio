@@ -1,6 +1,6 @@
 <div class="content" ng-controller="ProjectListCtrl">
   <ul>
-    <li ng-repeat="project in projects">
+    <li class="project" ng-repeat="project in projects">
       <a href="#/work/{{project.id}}">
         <img ng-src="{{project.thumbnail}}" alt="{{project.alt}}" />
       </a>

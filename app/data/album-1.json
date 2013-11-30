@@ -1,0 +1,28 @@
+{
+    "description": "These are really great photos that I took. There are really no other photos with as much depth as these, as much power and meaning. My eye for photography is spectacular, as you can plainly see, and other photographers need not continue their struggle, as the beauty is already captured here.",
+    "name": "Pictures Of My Friends And Such!",
+    "type": "photo_album",
+    "photos": 
+    [
+        {
+            "img": "http://www.geekzeitung.com/wp-content/uploads/2013/02/gollum.jpg",
+            "description": "My good friend Robert, a gentle man"
+        },
+        {
+            "img": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8TYPWgMGo0xShx85yDO4BuXuHZJpSdNTY7Re2ysCVc2H-pbrmAQ"
+        },
+        {
+            "img": "http://images2.fanpop.com/images/photos/4800000/Balrog-lord-of-the-rings-4801000-1920-1200.jpg",
+            "description": "A mother is the best friend a man could ask for"
+        },
+        {
+            "img": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfTRRQ2aIbAy5q9ZoHANwQeHX623olyTXJ8qKWRSObC92b8p8c",
+            "description": "There's Robert again! That guy!"
+        },
+        {
+            "img": "http://images5.fanpop.com/image/photos/24600000/LOTR-lord-of-the-rings-24657366-316-450.jpg",
+            "description": "The whole gang"
+        }
+    ]
+}
+

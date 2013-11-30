@@ -1,0 +1,11 @@
+@mixin inline-list($margin-right) {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    margin-right: $margin-right;
+}
+
+@mixin block-list() {
+    display: block;
+    text-align: left;
+}

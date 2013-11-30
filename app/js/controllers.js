@@ -4,6 +4,7 @@ var portfolioControllers = angular.module('portfolioControllers', ['portfolioCon
 
 portfolioControllers.controller('AppCtrl', ['$scope',
   function ($scope) {
+    $scope.title = portfolioConfig.title;
     $scope.navItems = portfolioConfig.navItems;
     $scope.copyrightText = 'All works &copy; 2012 Some Dude';
     //$scope.socialLinks = 
@@ -19,7 +20,8 @@ portfolioControllers.controller('ProjectListCtrl', ['$scope', 'Portfolio',
 portfolioControllers.controller('ProjectDetailCtrl', ['$scope', 'Portfolio', '$sce', '$routeParams',
   function ($scope, Portfolio, $sce, $routeParams) {
     $scope.project = Portfolio.get({dataId: $routeParams.projectId}, function (project) {
-      $scope.embedHtml = project.embedHtml ? $sce.trustAsHtml(project.embedHtml) : '';
+      if (project.type == 'video')
+        $scope.embedHtml = project.embedHtml ? $sce.trustAsHtml(project.embedHtml) : '';
     });
   }
 ]);
