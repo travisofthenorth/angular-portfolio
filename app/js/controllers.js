@@ -1,30 +1,10 @@
 'use strict';
 
-var portfolioControllers = angular.module('portfolioControllers', []);
-
-/**
- *
- */
-portfolioControllers.config = {
-                                'navItems': [
-                                  {'text': 'WORK', 'href': '#/work/'},
-                                  {'text': 'ABOUT', 'href': '#/about/'},
-                                  {'text': 'PRESS', 'href': '#/press/'},
-                                  {'text': 'CONTACT', 'href': '#/contact/'}
-                                ],
-                                'routes': [
-                                  {'route': '/work/', 'templateUrl': 'partials/projects.html', 'controller': 'ProjectListCtrl'},
-                                  {'route': '/work/:projectId', 'templateUrl': 'partials/project-details.html', 'controller': 'ProjectDetailCtrl'},
-                                  {'route': '/about/', 'templateUrl': 'partials/about.html', 'controller': 'AboutCtrl'},
-                                  {'route': '/press/', 'templateUrl': 'partials/press.html', 'controller': 'PressCtrl'},
-                                  {'route': '/contact/', 'templateUrl': 'partials/contact.html', 'controller': 'ContactCtrl'}
-                                ],
-                                'defaultRoute': '/work/'
-                              };
+var portfolioControllers = angular.module('portfolioControllers', ['portfolioConfig']);
 
 portfolioControllers.controller('AppCtrl', ['$scope',
   function ($scope) {
-    $scope.navItems = portfolioControllers.config.navItems;
+    $scope.navItems = portfolioConfig.navItems;
     $scope.copyrightText = 'All works &copy; 2012 Some Dude';
     //$scope.socialLinks = 
   }

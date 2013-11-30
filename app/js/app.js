@@ -4,13 +4,14 @@ var portfolioApp = angular.module('portfolioApp', [
   'ngRoute',
   'ngSanitize',
   'portfolioControllers',
-  'portfolioServices'
+  'portfolioServices',
+  'portfolioConfig'
 ]);
 
 portfolioApp.config(['$routeProvider',
   function($routeProvider) {
     // Set up navigation from config
-    var routes = portfolioControllers.config.routes;
+    var routes = portfolioConfig ? portfolioConfig.routes : null;
     if (routes !== undefined && routes.length > 0) {
       for (var i = 0; i < routes.length; i++) {
         $routeProvider.
@@ -19,7 +20,7 @@ portfolioApp.config(['$routeProvider',
           controller: routes[i].controller
         });
       }
-      var defaultRoute = portfolioControllers.config.defaultRoute;
+      var defaultRoute = portfolioConfig.config.defaultRoute;
       $routeProvider.otherwise({ redirectTo: defaultRoute ? defaultRoute : '/work' });
     } else {
       // Default navigation config
