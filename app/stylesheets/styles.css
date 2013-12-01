@@ -78,20 +78,25 @@ li {
   text-align: left;
   float: center;
   clear: both;
+  margin-bottom: 30px;
 }
-/* line 64, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
+.album li p {
+  margin-top: 2px;
+}
+/* line 69, ../sass/styles.scss */
 .album img {
   max-width: 1000px;
 }
 
-/* line 69, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 .event {
   width: 100%;
   display: block;
   text-align: left;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 79, ../sass/styles.scss */
 #footer {
   margin-top: 10px;
   border-top: 1px solid #333333;

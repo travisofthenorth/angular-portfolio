@@ -1,6 +1,6 @@
 {
     "description": "This is a really great video that I made. It is objectively better than most films made before it.",
     "name": "Video 1",
-    "embedHtml": "<iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/HgG_b9L7dwo\" frameborder=\"0\" allowfullscreen></iframe>",
+    "embed_html": "<iframe width=\"1000\" height=\"562\" src=\"//www.youtube.com/embed/HgG_b9L7dwo?autohide=1&fs=1&autoplay=0&iv_load_policy=3&rel=0&modestbranding=1&showinfo=0&hd=1\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
     "type": "video"
 }
