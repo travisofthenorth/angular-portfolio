@@ -1,27 +1,42 @@
 /* line 3, ../sass/styles.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 7, ../sass/styles.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 11, ../sass/styles.scss */
+a:visited {
+  color: #666666;
+}
+
+/* line 15, ../sass/styles.scss */
+a:hover {
+  color: #FF5100;
+}
+
+/* line 19, ../sass/styles.scss */
 #body {
   max-width: 1000px;
   margin: 50px auto;
 }
 
-/* line 8, ../sass/styles.scss */
-li {
-  list-style-type: none;
-}
-
-/* line 12, ../sass/styles.scss */
+/* line 24, ../sass/styles.scss */
 #header {
   border-bottom: 1px solid #333333;
 }
 
-/* line 16, ../sass/styles.scss */
+/* line 28, ../sass/styles.scss */
 #headerNav {
   text-align: center;
   width: 100%;
   margin-bottom: 10px;
 }
 
-/* line 22, ../sass/styles.scss */
+/* line 34, ../sass/styles.scss */
 .header-nav li {
   display: inline-block;
   float: none;
@@ -29,7 +44,7 @@ li {
   margin-right: 40px;
 }
 
-/* line 24, ../sass/styles.scss */
+/* line 36, ../sass/styles.scss */
 .content li {
   display: inline-block;
   float: none;
@@ -38,41 +53,41 @@ li {
   margin-left: 15px;
 }
 
-/* line 29, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 .content ul {
   padding: 0;
 }
 
-/* line 34, ../sass/styles.scss */
+/* line 46, ../sass/styles.scss */
 .project img {
   max-width: 300px;
 }
 
-/* line 39, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 .left {
   float: left;
   width: 50%;
 }
 
-/* line 44, ../sass/styles.scss */
+/* line 56, ../sass/styles.scss */
 .right {
   float: right;
   width: 50%;
 }
 
-/* line 49, ../sass/styles.scss */
+/* line 61, ../sass/styles.scss */
 .clear {
   clear: both;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 .about li {
   display: block;
   text-align: left;
   list-style-type: disc;
 }
 
-/* line 59, ../sass/styles.scss */
+/* line 71, ../sass/styles.scss */
 .album li {
   display: block;
   text-align: left;
@@ -80,23 +95,23 @@ li {
   clear: both;
   margin-bottom: 30px;
 }
-/* line 65, ../sass/styles.scss */
+/* line 77, ../sass/styles.scss */
 .album li p {
   margin-top: 2px;
 }
-/* line 69, ../sass/styles.scss */
+/* line 81, ../sass/styles.scss */
 .album img {
   max-width: 1000px;
 }
 
-/* line 74, ../sass/styles.scss */
+/* line 86, ../sass/styles.scss */
 .event {
   width: 100%;
   display: block;
   text-align: left;
 }
 
-/* line 79, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 #footer {
   margin-top: 10px;
   border-top: 1px solid #333333;

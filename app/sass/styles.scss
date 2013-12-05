@@ -1,12 +1,24 @@
 @import 'mixins';
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #666666;
+}
+
+a:hover {
+    color: #FF5100;
+}
+
 #body {
     max-width: 1000px;
     margin: 50px auto;
-}
-
-li {
-    list-style-type: none;
 }
 
 #header {
