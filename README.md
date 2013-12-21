@@ -26,6 +26,8 @@ Customize the CSS if you have experience with SASS. Both the .scss and .css file
 
 angular-README contains some information on running unit and e2e tests, but the gist of it is this:
 
+    # Install dependencies (make sure Node is installed first)
+    npm install
     # Run unit tests
     ./scripts/test.sh
     # Run e2e tests
