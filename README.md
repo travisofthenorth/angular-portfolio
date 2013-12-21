@@ -21,3 +21,12 @@ Check out the angular README for more specific information on angular and the in
     compass watch
 
 Customize the CSS if you have experience with SASS. Both the .scss and .css files are included, again, so that the site can be deployed as is or customized.
+
+#### Tests:
+
+angular-README contains some information on running unit and e2e tests, but the gist of it is this:
+
+    # Run unit tests
+    ./scripts/test.sh
+    # Run e2e tests
+    karma start config/karma-e2e.conf.js
