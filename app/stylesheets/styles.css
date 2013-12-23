@@ -112,6 +112,17 @@ a:hover {
 }
 
 /* line 91, ../sass/styles.scss */
+form {
+  padding: 10px;
+  width: 40%;
+  border: 1px solid #333333;
+}
+/* line 95, ../sass/styles.scss */
+form input {
+  margin-bottom: 10px;
+}
+
+/* line 100, ../sass/styles.scss */
 #footer {
   margin-top: 10px;
   border-top: 1px solid #333333;

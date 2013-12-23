@@ -53,16 +53,18 @@ portfolioControllers.controller('PressCtrl', ['$scope', 'Portfolio',
     $scope.title = "Press";
     Portfolio.get({dataId: 'press'}, function (data) {
       $scope.events = data.events;
+      $scope.press = data.press;
     });
   }
 ]);
 
-portfolioControllers.controller('ContactCtrl', ['$scope', 'Portfolio',
-  function ($scope, Portfolio) {
+portfolioControllers.controller('ContactCtrl', ['$scope', 'Portfolio', '$sce',
+  function ($scope, Portfolio, $sce) {
     $scope.title = "Contact";
     Portfolio.get({dataId: 'contact'}, function (data) {
       $scope.emailAddress = data.email;
       $scope.emailHref = 'mailto:' + data.email;
+      $scope.emailHrefTrusted = $sce.trustAsResourceUrl($scope.emailHref);
       $scope.text = data.text;
     });
   }

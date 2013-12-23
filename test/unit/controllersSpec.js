@@ -128,12 +128,18 @@ describe('PortfolioApp controllers', function(){
 
   // Test "Press" controller
   describe('PressCtrl', function(){
-    var scope, ctrl, $httpBackend;
+    var scope, ctrl, $httpBackend,
+        pressProjectData = function() {
+          return {
+            events: [{name: 'Event 1'}, {name: 'Event 2'}],
+            press: [{name: 'Item 1'}, {name: 'Item 2'}]
+          }
+        };
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectGET('data/press.json').
-          respond({events: [{name: 'Event 1'}, {name: 'Event 2'}]});
+          respond(pressProjectData());
 
       scope = $rootScope.$new();
       ctrl = $controller('PressCtrl', {$scope: scope});
@@ -144,8 +150,8 @@ describe('PortfolioApp controllers', function(){
       expect(scope.events).toEqualData();
       $httpBackend.flush();
 
-      expect(scope.events).toEqualData(
-          [{name: 'Event 1'}, {name: 'Event 2'}]);
+      expect(scope.events).toEqualData(pressProjectData().events);
+      expect(scope.press).toEqualData(pressProjectData().press);
     });
   });
 

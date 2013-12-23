@@ -14,9 +14,26 @@
         },
         {
             "date": "1/5/14",
-            "name": "Space Jam/Schindler's List Marathon",
+            "name": "LOTR Marathon",
             "url": "https://www.facebook.com",
-            "description": "Two great films duke it out for best film ever made, behind Mortal Kombat"
+            "description": "All of the LOTR movies over and over again"
+        }
+    ],
+    "press": [
+        {
+            "name": "This Article About Me",
+            "url": "http://en.wikipedia.org/wiki/Bill_clinton",
+            "description": "This is a biography I wrote about myself...an auto-biography"
+        },
+        {
+            "name": "That Article About Me",
+            "url": "http://tech.fortune.cnn.com/2013/12/18/apple-clinton-steve-jobs/",
+            "description": "I know this guy named Steve Jobs"
+        },
+        {
+            "name": "This Is How Great I Am",
+            "url": "https://twitter.com/billclinton",
+            "description": "My ideas have never been thought before"
         }
     ]
 }
