@@ -3,4 +3,12 @@
   <h3>To contact me, you must first listen to the rain</h3>
   <p>{{text}}</p>
   <a href="{{emailHref}}">{{emailAddress}}</a>
+  <p>Or maybe try this guy:</p>
+  <form action="{{emailHrefTrusted}}" method="post" enctype="text/plain" >
+    What's Your Name? <input type="text" name="FirstName"><br/>
+    What's Your Email Address? <input type="text" name="Email"><br/>
+    What's Up? <textarea rows="4" name="body"></textarea><br/>
+    <input type="hidden" name="subject" value="Email From Your Biggest Fan"/>
+    <input type="submit" name="submit" value="Submit">
+  </form>
 </div>
