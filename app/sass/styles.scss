@@ -83,15 +83,16 @@ a:hover {
     }
 }
 
-.event {
+.press li {
     width: 100%;
+    margin-bottom: 10px;
+    @include box();
     @include block-list();
 }
 
 form {
-    padding: 10px;
+    @include box();
     width: 40%;
-    border: 1px solid #333333;
     input {
         margin-bottom: 10px;
     }

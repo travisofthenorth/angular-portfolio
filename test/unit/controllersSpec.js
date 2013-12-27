@@ -131,7 +131,6 @@ describe('PortfolioApp controllers', function(){
     var scope, ctrl, $httpBackend,
         pressProjectData = function() {
           return {
-            events: [{name: 'Event 1'}, {name: 'Event 2'}],
             press: [{name: 'Item 1'}, {name: 'Item 2'}]
           }
         };
@@ -146,11 +145,10 @@ describe('PortfolioApp controllers', function(){
     }));
 
 
-    it('should create "events" model with 2 events fetched from xhr', function() {
-      expect(scope.events).toEqualData();
+    it('should create "press" model with 2 press fetched from xhr', function() {
+      expect(scope.press).toEqualData();
       $httpBackend.flush();
 
-      expect(scope.events).toEqualData(pressProjectData().events);
       expect(scope.press).toEqualData(pressProjectData().press);
     });
   });

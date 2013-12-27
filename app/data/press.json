@@ -1,39 +1,43 @@
 {
-    "events": [
+    "press": [
         {
             "date": "12/5/13",
             "name": "Whistler Film Festival",
             "url": "http://www.whistler.com/wff/",
-            "description": "This will be mildly entertaining"
+            "description": "This will be mildly entertaining",
+            "type": "event"
         },
         {
             "date": "12/30/13",
             "name": "Homage To Mortal Kombat",
             "url": "http://www.bing.com/",
-            "description": "The greatest film ever made"
+            "description": "The greatest film ever made",
+            "type": "event"
         },
         {
             "date": "1/5/14",
             "name": "LOTR Marathon",
             "url": "https://www.facebook.com",
-            "description": "All of the LOTR movies over and over again"
-        }
-    ],
-    "press": [
+            "description": "All of the LOTR movies over and over again",
+            "type": "event"
+        },
         {
             "name": "This Article About Me",
             "url": "http://en.wikipedia.org/wiki/Bill_clinton",
-            "description": "This is a biography I wrote about myself...an auto-biography"
+            "description": "This is a biography I wrote about myself...an auto-biography",
+            "type": "media"
         },
         {
             "name": "That Article About Me",
             "url": "http://tech.fortune.cnn.com/2013/12/18/apple-clinton-steve-jobs/",
-            "description": "I know this guy named Steve Jobs"
+            "description": "I know this guy named Steve Jobs",
+            "type": "media"
         },
         {
             "name": "This Is How Great I Am",
             "url": "https://twitter.com/billclinton",
-            "description": "My ideas have never been thought before"
+            "description": "My ideas have never been thought before",
+            "type": "media"
         }
     ]
 }

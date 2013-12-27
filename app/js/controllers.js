@@ -52,7 +52,6 @@ portfolioControllers.controller('PressCtrl', ['$scope', 'Portfolio',
   function ($scope, Portfolio) {
     $scope.title = "Press";
     Portfolio.get({dataId: 'press'}, function (data) {
-      $scope.events = data.events;
       $scope.press = data.press;
     });
   }
