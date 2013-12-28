@@ -1,3 +1,76 @@
+$blueprint-grid-columns: 12;
+$blueprint-grid-width: 60px;
+$blueprint-grid-margin: 20px;
+
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "blueprint/grid";
+
+body {
+  font-size: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000000;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+h1 {
+  font-size: 2.0em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1.0em;
+}
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#body {
+  @include container;
+}
+header, #header {
+  #logo {
+    padding: $blueprint-grid-margin*2 0px $blueprint-grid-margin;
+  }
+}
+
+#header-nav {
+  padding: 10px 5px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  @include clearfix;
+
+  li {
+    display: relative;
+    float: left;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+  }
+}
+
+/*
 @import 'mixins';
 
 li {
@@ -33,9 +106,9 @@ a:hover {
 
 .header-nav li { @include inline-list(40px); }
 
-.content li { 
+.content li {
     @include inline-list(15px);
-    margin-left: 15px; 
+    margin-left: 15px;
 }
 
 .content ul {
@@ -102,3 +175,4 @@ form {
     margin-top: 10px;
     border-top: 1px solid #333333;
 }
+*/
