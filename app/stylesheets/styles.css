@@ -105,24 +105,27 @@ a:hover {
 }
 
 /* line 86, ../sass/styles.scss */
-.event {
+.press li {
   width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #333333;
   display: block;
   text-align: left;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 form {
   padding: 10px;
-  width: 40%;
   border: 1px solid #333333;
+  width: 40%;
 }
-/* line 95, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 form input {
   margin-bottom: 10px;
 }
 
-/* line 100, ../sass/styles.scss */
+/* line 101, ../sass/styles.scss */
 #footer {
   margin-top: 10px;
   border-top: 1px solid #333333;

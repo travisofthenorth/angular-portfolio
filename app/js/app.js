@@ -39,15 +39,15 @@ portfolioApp.config(['$routeProvider',
           templateUrl: 'partials/project-details.html',
           controller: 'ProjectDetailCtrl'
         }).
-        when('/about/', {
+        when('/about', {
           templateUrl: 'partials/about.html',
           controller: 'AboutCtrl'
         }).
-        when('/press/', {
+        when('/press', {
           templateUrl: 'partials/press.html',
           controller: 'PressCtrl'
         }).
-        when('/contact/', {
+        when('/contact', {
           templateUrl: 'partials/contact.html',
           controller: 'ContactCtrl'
         }).

@@ -6,7 +6,7 @@ describe('PortfolioApp app', function() {
 
   it('should redirect index.html to index.html#/work', function() {
     browser().navigateTo('app/index.html');
-    expect(browser().location().url()).toBe('/work/');
+    expect(browser().location().url()).toBe('/work');
   });
 
   describe('Project list view', function() {
@@ -22,7 +22,7 @@ describe('PortfolioApp app', function() {
 
     it('should render navigation links', function() {
       element('.header-nav li:eq(1) a').click();
-      expect(browser().location().url()).toBe('/about/');
+      expect(browser().location().url()).toBe('/about');
     });
 
   });

@@ -9,3 +9,8 @@
     display: block;
     text-align: left;
 }
+
+@mixin box() {
+    padding: 10px;
+    border: 1px solid #333333;
+}
