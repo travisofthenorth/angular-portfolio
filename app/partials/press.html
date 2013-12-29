@@ -1,14 +1,14 @@
-<div class="content" ng-controller="PressCtrl">
-  <h1>{{title}}</h1>
+<div class="content" id="press" ng-controller="PressCtrl">
+  <h2>{{title}}</h2>
   <ul class="press">
     <li ng-repeat="item in press">
       <div ng-switch on="item.type">
         <div ng-switch-when="event">
-          <a href="{{item.url}}">{{item.name}}</a>
+          <h5><a href="{{item.url}}">{{item.name}}</a></h5>
           <p>{{item.description}}</p>
         </div>
         <div ng-switch-when="media">
-          <a href="{{item.url}}">{{item.name}}</a>
+          <h5><a href="{{item.url}}">{{item.name}}</a></h5>
           <p>{{item.description}}</p>
         </div>
       </div>

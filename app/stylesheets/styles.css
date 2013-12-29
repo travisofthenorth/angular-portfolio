@@ -1,132 +1,338 @@
-/* line 3, ../sass/styles.scss */
-li {
-  list-style-type: none;
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-/* line 7, ../sass/styles.scss */
-a {
-  text-decoration: none;
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
 }
 
-/* line 11, ../sass/styles.scss */
-a:visited {
-  color: #666666;
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/styles.scss */
+body {
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 /* line 15, ../sass/styles.scss */
-a:hover {
-  color: #FF5100;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 800;
+  color: #000000;
+}
+/* line 20, ../sass/styles.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* line 19, ../sass/styles.scss */
-#body {
-  max-width: 1000px;
-  margin: 50px auto;
+/* line 26, ../sass/styles.scss */
+h1 {
+  font-size: 4.0em;
+  text-transform: uppercase;
 }
 
-/* line 24, ../sass/styles.scss */
-#header {
-  border-bottom: 1px solid #333333;
+/* line 30, ../sass/styles.scss */
+h2 {
+  font-size: 2.6em;
 }
 
-/* line 28, ../sass/styles.scss */
-#headerNav {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-/* line 34, ../sass/styles.scss */
-.header-nav li {
-  display: inline-block;
-  float: none;
-  text-align: center;
-  margin-right: 40px;
+/* line 33, ../sass/styles.scss */
+h3 {
+  font-size: 2.2em;
 }
 
 /* line 36, ../sass/styles.scss */
-.content li {
-  display: inline-block;
-  float: none;
-  text-align: center;
-  margin-right: 15px;
-  margin-left: 15px;
+h4 {
+  font-size: 1.8em;
 }
 
-/* line 41, ../sass/styles.scss */
-.content ul {
-  padding: 0;
+/* line 39, ../sass/styles.scss */
+h5 {
+  font-size: 1.4em;
+}
+
+/* line 42, ../sass/styles.scss */
+h6 {
+  font-size: 1.0em;
 }
 
 /* line 46, ../sass/styles.scss */
-.project img {
-  max-width: 300px;
+a:hover {
+  text-decoration: underline;
 }
 
 /* line 51, ../sass/styles.scss */
-.left {
+#body {
+  width: 940px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 55, ../sass/styles.scss */
+header #logo, #header #logo {
+  padding: 40px 0px 20px;
+}
+
+/* line 60, ../sass/styles.scss */
+#header-nav {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 66, ../sass/styles.scss */
+#header-nav li {
+  position: relative;
   float: left;
-  width: 50%;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 20px;
 }
-
-/* line 56, ../sass/styles.scss */
-.right {
-  float: right;
-  width: 50%;
-}
-
-/* line 61, ../sass/styles.scss */
-.clear {
-  clear: both;
-}
-
-/* line 65, ../sass/styles.scss */
-.about li {
+/* line 74, ../sass/styles.scss */
+#header-nav li a {
   display: block;
-  text-align: left;
-  list-style-type: disc;
+  padding: 15px 15px;
+  text-decoration: none;
+  color: #000000;
+}
+/* line 79, ../sass/styles.scss */
+#header-nav li a:hover {
+  color: #FFFFFF;
+  background: #000000;
 }
 
-/* line 71, ../sass/styles.scss */
-.album li {
-  display: block;
-  text-align: left;
-  float: center;
-  clear: both;
-  margin-bottom: 30px;
+/* line 87, ../sass/styles.scss */
+.content {
+  width: 940px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
 }
-/* line 77, ../sass/styles.scss */
-.album li p {
-  margin-top: 2px;
+/* line 90, ../sass/styles.scss */
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
+  margin-bottom: 20px;
 }
-/* line 81, ../sass/styles.scss */
-.album img {
-  max-width: 1000px;
-}
-
-/* line 86, ../sass/styles.scss */
-.press li {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #333333;
-  display: block;
-  text-align: left;
-}
-
 /* line 93, ../sass/styles.scss */
-form {
-  padding: 10px;
-  border: 1px solid #333333;
-  width: 40%;
+.content ul, .content ol {
+  margin: 20px 0px;
 }
-/* line 96, ../sass/styles.scss */
-form input {
+/* line 97, ../sass/styles.scss */
+.content .project {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 147, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content .project {
+  overflow-x: hidden;
+}
+/* line 102, ../sass/styles.scss */
+.content .project:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 106, ../sass/styles.scss */
+.content .project p {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.4em;
+  font-weight: 800;
+  color: #000000;
+  display: none;
+}
+/* line 121, ../sass/styles.scss */
+.content .project p span {
+  position: absolute;
+  display: block;
+  bottom: 32px;
+}
+/* line 128, ../sass/styles.scss */
+.content .project a:hover p {
+  display: block;
+}
+/* line 133, ../sass/styles.scss */
+.content#about {
+  margin-bottom: 20px;
+}
+/* line 136, ../sass/styles.scss */
+.content#about h2 {
+  margin-bottom: 20px;
+}
+/* line 139, ../sass/styles.scss */
+.content#about .about {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 620px;
+  line-height: 1.4em;
+}
+/* line 147, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content#about .about {
+  overflow-x: hidden;
+}
+/* line 143, ../sass/styles.scss */
+.content#about .about ul {
+  list-style: disc inside none;
+}
+/* line 146, ../sass/styles.scss */
+.content#about .about ol {
+  list-style: decimal inside none;
+}
+/* line 150, ../sass/styles.scss */
+.content#about .aside {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 300px;
+}
+/* line 147, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content#about .aside {
+  overflow-x: hidden;
+}
+/* line 155, ../sass/styles.scss */
+.content#press li {
+  border-bottom: 1px solid #b0b0b0;
+  margin-bottom: 20px;
+}
+/* line 159, ../sass/styles.scss */
+.content#press li:last-child {
+  border: none;
+}
+/* line 165, ../sass/styles.scss */
+.content .video {
+  margin-bottom: 20px;
+}
+
+/* line 170, ../sass/styles.scss */
+footer, #footer {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 940px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 1em;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+}
+/* line 147, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html footer, * html #footer {
+  overflow-x: hidden;
+}
+
+/* Form Goodies */
+/* line 184, ../sass/styles.scss */
+input, label {
+  display: block;
+  position: relative;
+}
+
+/* line 189, ../sass/styles.scss */
+label {
   margin-bottom: 10px;
 }
 
-/* line 101, ../sass/styles.scss */
-#footer {
-  margin-top: 10px;
-  border-top: 1px solid #333333;
+/* line 192, ../sass/styles.scss */
+input[type="text"], textarea {
+  border: 1px solid #b0b0b0;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 1.0em;
+}
+
+/* line 200, ../sass/styles.scss */
+.form-field, .form-actions {
+  margin-bottom: 20px;
+}
+
+/* line 204, ../sass/styles.scss */
+input[type="submit"], .button {
+  padding: 10px;
+  border: 1px solid #b0b0b0;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+}
+/* line 213, ../sass/styles.scss */
+input[type="submit"]:hover, .button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
 }

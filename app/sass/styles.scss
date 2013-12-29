@@ -1,104 +1,217 @@
-@import 'mixins';
+$blueprint-grid-columns: 12;
+$blueprint-grid-width: 60px;
+$blueprint-grid-margin: 20px;
 
-li {
-    list-style-type: none;
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3";
+@import "blueprint/grid";
+
+body {
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
-a {
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+  color: #000000;
+
+  a {
     text-decoration: none;
+    color: inherit;
+  }
 }
 
-a:visited {
-    color: #666666;
+h1 {
+  font-size: 4.0em;
+  text-transform: uppercase;
 }
-
-a:hover {
-    color: #FF5100;
+h2 {
+  font-size: 2.6em;
+}
+h3 {
+  font-size: 2.2em;
+}
+h4 {
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.4em;
+}
+h6 {
+  font-size: 1.0em;
+}
+a {
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 #body {
-    max-width: 1000px;
-    margin: 50px auto;
+  @include container;
+}
+header, #header {
+  #logo {
+    padding: $blueprint-grid-margin*2 0px $blueprint-grid-margin;
+  }
 }
 
-#header {
-    border-bottom: 1px solid #333333;
-}
+#header-nav {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-bottom: $blueprint-grid-margin;
+  @include clearfix;
 
-#headerNav {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.header-nav li { @include inline-list(40px); }
-
-.content li { 
-    @include inline-list(15px);
-    margin-left: 15px; 
-}
-
-.content ul {
-    padding: 0;
-}
-
-.project {
-    img {
-        max-width: 300px;
-    }
-}
-
-.left {
+  li {
+    position: relative;
     float: left;
-    width: 50%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 20px;
+
+    a {
+      display: block;
+      padding: 15px 15px;
+      text-decoration: none;
+      color: #000000;
+      &:hover {
+        color: #FFFFFF;
+        background: #000000;
+      }
+    }
+  }
 }
 
-.right {
-    float: right;
-    width: 50%;
-}
+.content {
+  @include container;
 
-.clear {
-    clear: both;
-}
+  h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: $blueprint-grid-margin;
+  }
+  ul, ol {
+    margin: $blueprint-grid-margin 0px;
+  }
 
-.about li {
-    @include block-list();
-    list-style-type: disc;
-}
+  .project {
+    @include column(4);
+    margin-bottom: $blueprint-grid-margin;
+    position: relative;
 
-.album {
+    &:nth-child(3n) {
+      @include last;
+    }
+
+    p {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      @include box-sizing(border-box);
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 1.4em;
+      font-weight: 800;
+      color: #000000;
+      display: none;
+
+      span {
+        position: absolute;
+        display: block;
+        bottom: 32px;
+      }
+    }
+
+    a:hover p {
+      display: block;
+    }
+  }
+
+  &#about {
+    margin-bottom: $blueprint-grid-margin;
+
+    h2 {
+      margin-bottom: $blueprint-grid-margin;
+    }
+    .about {
+      @include column(8);
+      line-height: 1.4em;
+
+      ul {
+        list-style: disc inside none;
+      }
+      ol {
+        list-style: decimal inside none;
+      }
+    }
+    .aside {
+      @include column(4, true);
+    }
+  }
+  &#press {
     li {
-        @include block-list();
-        float: center;
-        clear: both;
-        margin-bottom: 30px;
+      border-bottom: 1px solid #B0B0B0;
+      margin-bottom: $blueprint-grid-margin;
 
-        p {
-            margin-top: 2px;
-        }
+      &:last-child {
+        border: none;
+      }
     }
-    img {
-        max-width: 1000px;
-    }
+  }
+
+  .video {
+    margin-bottom: $blueprint-grid-margin;
+  }
 }
 
-.press li {
-    width: 100%;
-    margin-bottom: 10px;
-    @include box();
-    @include block-list();
+footer, #footer {
+  @include column(12, true);
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 1em;
+  padding: 15px 15px;
+  margin-bottom: $blueprint-grid-margin;
 }
 
-form {
-    @include box();
-    width: 40%;
-    input {
-        margin-bottom: 10px;
-    }
+/* Form Goodies */
+input, label {
+  display: block;
+  position: relative;
 }
 
-#footer {
-    margin-top: 10px;
-    border-top: 1px solid #333333;
+label {
+  margin-bottom: $blueprint-grid-margin / 2;
+}
+input[type="text"], textarea {
+  border: 1px solid #B0B0B0;
+  width: span(4);
+  @include box-sizing(border-box);
+  padding: 5px 10px;
+  font-size: 1.0em;
+}
+
+.form-field, .form-actions {
+  margin-bottom: $blueprint-grid-margin;
+}
+
+input[type="submit"], .button {
+  padding: 10px;
+  border: 1px solid #B0B0B0;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+
+  &:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
 }
