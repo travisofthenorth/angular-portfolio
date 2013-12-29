@@ -7,10 +7,10 @@ var portfolioConfig = angular.module('portfolioConfig', []);
  */
 portfolioConfig.title = "My Portfolio";
 portfolioConfig.navItems = [
-                              {'text': 'WORK', 'href': '#/work'},
-                              {'text': 'ABOUT', 'href': '#/about'},
-                              {'text': 'PRESS', 'href': '#/press'},
-                              {'text': 'CONTACT', 'href': '#/contact'}
+                              {'text': 'Work', 'href': '#/work'},
+                              {'text': 'About', 'href': '#/about'},
+                              {'text': 'Press', 'href': '#/press'},
+                              {'text': 'Contact', 'href': '#/contact'}
                             ];
 portfolioConfig.routes = [
                             {'route': '/work', 'templateUrl': 'partials/projects.html', 'controller': 'ProjectListCtrl'},

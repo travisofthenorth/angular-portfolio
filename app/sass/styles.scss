@@ -4,6 +4,7 @@ $blueprint-grid-margin: 20px;
 
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
+@import "compass/css3";
 @import "blueprint/grid";
 
 body {
@@ -56,20 +57,84 @@ header, #header {
 }
 
 #header-nav {
-  padding: 10px 5px;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
+  margin-bottom: $blueprint-grid-margin;
   @include clearfix;
 
   li {
-    display: relative;
+    position: relative;
     float: left;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 400;
     text-transform: none;
+    font-size: 20px;
+
+    a {
+      display: block;
+      padding: 15px 15px;
+      text-decoration: none;
+      color: #000000;
+      &:hover {
+        color: #FFFFFF;
+        background: #000000;
+      }
+    }
   }
 }
 
+.content {
+  @include container;
+
+  .project {
+    @include column(4);
+    margin-bottom: $blueprint-grid-margin;
+    position: relative;
+
+    &:nth-child(3n) {
+      @include last;
+    }
+
+    p {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      @include box-sizing(border-box);
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-family: 'Alegreya Sans', sans-serif;
+      font-size: 1.4em;
+      font-weight: 800;
+      color: #000000;
+      display: none;
+
+      span {
+        position: absolute;
+        display: block;
+        bottom: 32px;
+      }
+    }
+
+    a:hover p {
+      display: block;
+    }
+  }
+}
+
+footer, #footer {
+  @include column(12, true);
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  padding: 15px 15px;
+  margin-bottom: $blueprint-grid-margin;
+}
 /*
 @import 'mixins';
 

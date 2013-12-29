@@ -3,8 +3,8 @@
     <li class="project" ng-repeat="project in projects">
       <a href="#/work/{{project.id}}">
         <img ng-src="{{project.thumbnail}}" alt="{{project.alt}}" />
+        <p><span>{{project.name}}</span></p>
       </a>
-      <p>{{project.name}}</p>
     </li>
   </ul>
 </div>

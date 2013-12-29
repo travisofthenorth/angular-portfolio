@@ -63,60 +63,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 9, ../sass/styles.scss */
+/* line 10, ../sass/styles.scss */
 body {
   font-size: 24px;
 }
 
-/* line 13, ../sass/styles.scss */
+/* line 14, ../sass/styles.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   color: #000000;
 }
-/* line 19, ../sass/styles.scss */
+/* line 20, ../sass/styles.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 25, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 h1 {
   font-size: 2.0em;
 }
 
-/* line 28, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 h2 {
   font-size: 1.8em;
 }
 
-/* line 31, ../sass/styles.scss */
+/* line 32, ../sass/styles.scss */
 h3 {
   font-size: 1.6em;
 }
 
-/* line 34, ../sass/styles.scss */
+/* line 35, ../sass/styles.scss */
 h4 {
   font-size: 1.4em;
 }
 
-/* line 37, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 h5 {
   font-size: 1.2em;
 }
 
-/* line 40, ../sass/styles.scss */
+/* line 41, ../sass/styles.scss */
 h6 {
   font-size: 1.0em;
 }
 
-/* line 44, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 49, ../sass/styles.scss */
+/* line 50, ../sass/styles.scss */
 #body {
   width: 940px;
   margin: 0 auto;
@@ -124,26 +124,112 @@ a:hover {
   *zoom: 1;
 }
 
-/* line 53, ../sass/styles.scss */
+/* line 54, ../sass/styles.scss */
 header #logo, #header #logo {
   padding: 40px 0px 20px;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 59, ../sass/styles.scss */
 #header-nav {
-  padding: 10px 5px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  margin-bottom: 20px;
   overflow: hidden;
   *zoom: 1;
 }
-/* line 64, ../sass/styles.scss */
+/* line 65, ../sass/styles.scss */
 #header-nav li {
-  display: relative;
+  position: relative;
   float: left;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 400;
   text-transform: none;
+  font-size: 20px;
+}
+/* line 73, ../sass/styles.scss */
+#header-nav li a {
+  display: block;
+  padding: 15px 15px;
+  text-decoration: none;
+  color: #000000;
+}
+/* line 78, ../sass/styles.scss */
+#header-nav li a:hover {
+  color: #FFFFFF;
+  background: #000000;
+}
+
+/* line 86, ../sass/styles.scss */
+.content {
+  width: 940px;
+  margin: 0 auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 89, ../sass/styles.scss */
+.content .project {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* line 147, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html .content .project {
+  overflow-x: hidden;
+}
+/* line 94, ../sass/styles.scss */
+.content .project:nth-child(3n) {
+  margin-right: 0;
+}
+/* line 98, ../sass/styles.scss */
+.content .project p {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.4em;
+  font-weight: 800;
+  color: #000000;
+  display: none;
+}
+/* line 113, ../sass/styles.scss */
+.content .project p span {
+  position: absolute;
+  display: block;
+  bottom: 32px;
+}
+/* line 120, ../sass/styles.scss */
+.content .project a:hover p {
+  display: block;
+}
+
+/* line 126, ../sass/styles.scss */
+footer, #footer {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 940px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+}
+/* line 147, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html footer, * html #footer {
+  overflow-x: hidden;
 }
 
 /*
