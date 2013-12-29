@@ -268,8 +268,12 @@ header #logo, #header #logo {
 .content#press li:last-child {
   border: none;
 }
+/* line 165, ../sass/styles.scss */
+.content .video {
+  margin-bottom: 20px;
+}
 
-/* line 166, ../sass/styles.scss */
+/* line 170, ../sass/styles.scss */
 footer, #footer {
   display: inline;
   float: left;
@@ -290,18 +294,18 @@ footer, #footer {
 }
 
 /* Form Goodies */
-/* line 180, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 input, label {
   display: block;
   position: relative;
 }
 
-/* line 185, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 label {
   margin-bottom: 10px;
 }
 
-/* line 188, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 input[type="text"], textarea {
   border: 1px solid #b0b0b0;
   width: 300px;
@@ -312,12 +316,12 @@ input[type="text"], textarea {
   font-size: 1.0em;
 }
 
-/* line 196, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .form-field, .form-actions {
   margin-bottom: 20px;
 }
 
-/* line 200, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 input[type="submit"], .button {
   padding: 10px;
   border: 1px solid #b0b0b0;
@@ -327,7 +331,7 @@ input[type="submit"], .button {
   font-size: 1em;
   font-weight: 800;
 }
-/* line 209, ../sass/styles.scss */
+/* line 213, ../sass/styles.scss */
 input[type="submit"]:hover, .button:hover {
   background-color: #000000;
   color: #FFFFFF;
