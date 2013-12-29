@@ -8,13 +8,13 @@ $blueprint-grid-margin: 20px;
 @import "blueprint/grid";
 
 body {
-  font-size: 24px;
+  font-size: 14px;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 800;
-  text-transform: uppercase;
   color: #000000;
 
   a {
@@ -24,19 +24,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.0em;
+  font-size: 4.0em;
+  text-transform: uppercase;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 2.6em;
 }
 h3 {
-  font-size: 1.6em;
+  font-size: 2.2em;
 }
 h4 {
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 h5 {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 h6 {
   font-size: 1.0em;
@@ -121,6 +122,28 @@ header, #header {
       display: block;
     }
   }
+
+  &#about {
+    margin-bottom: $blueprint-grid-margin;
+
+    h2 {
+      margin-bottom: $blueprint-grid-margin;
+    }
+    .about {
+      @include column(8);
+      line-height: 1.4em;
+
+      ul {
+        list-style: disc inside none;
+      }
+      ol {
+        list-style: decimal inside none;
+      }
+    }
+    .aside {
+      @include column(4, true);
+    }
+  }
 }
 
 footer, #footer {
@@ -131,7 +154,7 @@ footer, #footer {
   font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
   text-transform: none;
-  font-size: 14px;
+  font-size: 1em;
   padding: 15px 15px;
   margin-bottom: $blueprint-grid-margin;
 }
