@@ -175,3 +175,39 @@ footer, #footer {
   padding: 15px 15px;
   margin-bottom: $blueprint-grid-margin;
 }
+
+/* Form Goodies */
+input, label {
+  display: block;
+  position: relative;
+}
+
+label {
+  margin-bottom: $blueprint-grid-margin / 2;
+}
+input[type="text"], textarea {
+  border: 1px solid #B0B0B0;
+  width: span(4);
+  @include box-sizing(border-box);
+  padding: 5px 10px;
+  font-size: 1.0em;
+}
+
+.form-field, .form-actions {
+  margin-bottom: $blueprint-grid-margin;
+}
+
+input[type="submit"], .button {
+  padding: 10px;
+  border: 1px solid #B0B0B0;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+
+  &:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+}

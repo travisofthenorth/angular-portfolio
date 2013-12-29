@@ -288,3 +288,47 @@ footer, #footer {
 * html footer, * html #footer {
   overflow-x: hidden;
 }
+
+/* Form Goodies */
+/* line 180, ../sass/styles.scss */
+input, label {
+  display: block;
+  position: relative;
+}
+
+/* line 185, ../sass/styles.scss */
+label {
+  margin-bottom: 10px;
+}
+
+/* line 188, ../sass/styles.scss */
+input[type="text"], textarea {
+  border: 1px solid #b0b0b0;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  font-size: 1.0em;
+}
+
+/* line 196, ../sass/styles.scss */
+.form-field, .form-actions {
+  margin-bottom: 20px;
+}
+
+/* line 200, ../sass/styles.scss */
+input[type="submit"], .button {
+  padding: 10px;
+  border: 1px solid #b0b0b0;
+  background-color: #FFFFFF;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+}
+/* line 209, ../sass/styles.scss */
+input[type="submit"]:hover, .button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
