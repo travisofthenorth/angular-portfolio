@@ -87,6 +87,13 @@ header, #header {
 .content {
   @include container;
 
+  h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: $blueprint-grid-margin;
+  }
+  ul, ol {
+    margin: $blueprint-grid-margin 0px;
+  }
+
   .project {
     @include column(4);
     margin-bottom: $blueprint-grid-margin;
@@ -142,6 +149,16 @@ header, #header {
     }
     .aside {
       @include column(4, true);
+    }
+  }
+  &#press {
+    li {
+      border-bottom: 1px solid #B0B0B0;
+      margin-bottom: $blueprint-grid-margin;
+
+      &:last-child {
+        border: none;
+      }
     }
   }
 }

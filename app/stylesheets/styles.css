@@ -168,6 +168,14 @@ header #logo, #header #logo {
   *zoom: 1;
 }
 /* line 90, ../sass/styles.scss */
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .content p {
+  margin-bottom: 20px;
+}
+/* line 93, ../sass/styles.scss */
+.content ul, .content ol {
+  margin: 20px 0px;
+}
+/* line 97, ../sass/styles.scss */
 .content .project {
   display: inline;
   float: left;
@@ -180,11 +188,11 @@ header #logo, #header #logo {
 * html .content .project {
   overflow-x: hidden;
 }
-/* line 95, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .content .project:nth-child(3n) {
   margin-right: 0;
 }
-/* line 99, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .content .project p {
   position: absolute;
   height: 100%;
@@ -202,25 +210,25 @@ header #logo, #header #logo {
   color: #000000;
   display: none;
 }
-/* line 114, ../sass/styles.scss */
+/* line 121, ../sass/styles.scss */
 .content .project p span {
   position: absolute;
   display: block;
   bottom: 32px;
 }
-/* line 121, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .content .project a:hover p {
   display: block;
 }
-/* line 126, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 .content#about {
   margin-bottom: 20px;
 }
-/* line 129, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .content#about h2 {
   margin-bottom: 20px;
 }
-/* line 132, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 .content#about .about {
   display: inline;
   float: left;
@@ -232,15 +240,15 @@ header #logo, #header #logo {
 * html .content#about .about {
   overflow-x: hidden;
 }
-/* line 136, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .content#about .about ul {
   list-style: disc inside none;
 }
-/* line 139, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .content#about .about ol {
   list-style: decimal inside none;
 }
-/* line 143, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .content#about .aside {
   display: inline;
   float: left;
@@ -251,8 +259,17 @@ header #logo, #header #logo {
 * html .content#about .aside {
   overflow-x: hidden;
 }
+/* line 155, ../sass/styles.scss */
+.content#press li {
+  border-bottom: 1px solid #b0b0b0;
+  margin-bottom: 20px;
+}
+/* line 159, ../sass/styles.scss */
+.content#press li:last-child {
+  border: none;
+}
 
-/* line 149, ../sass/styles.scss */
+/* line 166, ../sass/styles.scss */
 footer, #footer {
   display: inline;
   float: left;
