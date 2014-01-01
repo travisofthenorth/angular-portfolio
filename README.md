@@ -17,6 +17,14 @@ Check out the angular README for more specific information on angular and the in
 #### How to configure it:
 
 Check out config.js. In here, you can find a few customizable items, e.g. the site title, the navigation items, and the routes/controllers.
+
+#### How to configure emails:
+
+If you would like to send emails through the contact page, you need to use a server-side script with some SMTP configuration. Included is a PHP script--for any web server using PHP--which makes use of the Swift mail library.
+
+    git checkout php-swift-mail
+    
+Right now, only Gmail is supported. You must set the SMTP username/password, as well as the To: email address (who should receive the emails) in the send.php script.
     
 #### How to SASS it:
 
@@ -39,4 +47,5 @@ angular-README contains some information on running unit and e2e tests, but the 
 #### COMING SOON!
 
 1. Themes! I want to create a few base themes that can be selected in the app config.
-2. Probably a server-side script to handle sending an email from the Contact page.
+2. ~~Probably a server-side script to handle sending an email from the Contact page.~~
+3. Better validation/error handling/messages on contact form.
