@@ -71,7 +71,7 @@ body {
 
 /* line 15, ../sass/styles.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-weight: 800;
   color: #000000;
 }
@@ -132,8 +132,8 @@ header #logo, #header #logo {
 
 /* line 60, ../sass/styles.scss */
 #header-nav {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   margin-bottom: 20px;
   overflow: hidden;
   *zoom: 1;
@@ -142,7 +142,7 @@ header #logo, #header #logo {
 #header-nav li {
   position: relative;
   float: left;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
   text-transform: none;
   font-size: 20px;
@@ -204,7 +204,7 @@ header #logo, #header #logo {
   box-sizing: border-box;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.7);
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.4em;
   font-weight: 800;
   color: #000000;
@@ -261,7 +261,7 @@ header #logo, #header #logo {
 }
 /* line 155, ../sass/styles.scss */
 .content#press li {
-  border-bottom: 1px solid #b0b0b0;
+  border-bottom: 1px solid #B0B0B0;
   margin-bottom: 20px;
 }
 /* line 159, ../sass/styles.scss */
@@ -279,9 +279,9 @@ footer, #footer {
   float: left;
   margin-right: 0;
   width: 940px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  font-family: "Alegreya Sans", sans-serif;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  font-family: 'Alegreya Sans', sans-serif;
   font-weight: 400;
   text-transform: none;
   font-size: 1em;
@@ -306,8 +306,8 @@ label {
 }
 
 /* line 192, ../sass/styles.scss */
-input[type="text"], textarea {
-  border: 1px solid #b0b0b0;
+input[type="text"], input[type="email"], textarea {
+  border: 1px solid #B0B0B0;
   width: 300px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -324,7 +324,7 @@ input[type="text"], textarea {
 /* line 204, ../sass/styles.scss */
 input[type="submit"], .button {
   padding: 10px;
-  border: 1px solid #b0b0b0;
+  border: 1px solid #B0B0B0;
   background-color: #FFFFFF;
   color: #000000;
   text-transform: uppercase;

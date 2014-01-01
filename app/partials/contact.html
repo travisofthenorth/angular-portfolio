@@ -4,25 +4,25 @@
   <p>{{text}}</p>
   <p><a href="{{emailHref}}">{{emailAddress}}</a></p>
   <p>Or maybe try this guy:</p>
-  <form action="{{emailHrefTrusted}}" method="post" enctype="text/plain" >
+  <form name="contactForm">
     <div class="form-field">
       <label for="firstName">What's Your Name?</label>
-      <input id="firstName" type="text" name="FirstName">
+      <input id="firstName" type="text" name="FirstName" ng-model="msg.name" required="true" placeholder="Your Name">
     </div>
 
     <div class="form-field">
       <label for="Email">What's Your Email Address?</label>
-      <input id="Email" type="text" name="Email">
+      <input id="Email" type="email" name="Email" ng-model="msg.email" required="true" placeholder="Your Email Address">
     </div>
 
     <div class="form-field">
       <label for="contact-body">What's Up?</label>
-      <textarea id="contact-body" rows="4" name="body"></textarea><br/>
+      <textarea id="contact-body" rows="4" name="body" ng-model="msg.body" required="true" placeholder="Your Message"></textarea><br/>
     </div>
 
     <div class="form-actions">
       <input type="hidden" name="subject" value="Email From Your Biggest Fan"/>
-      <input type="submit" name="submit" value="Submit" class="button">
+      <input type="submit" name="submit" value="Submit" class="button" ng-disabled="{{disabled}}" ng-click="send()">
     </div>
   </form>
 </div>

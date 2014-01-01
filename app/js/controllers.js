@@ -57,14 +57,29 @@ portfolioControllers.controller('PressCtrl', ['$scope', 'Portfolio',
   }
 ]);
 
-portfolioControllers.controller('ContactCtrl', ['$scope', 'Portfolio', '$sce',
-  function ($scope, Portfolio, $sce) {
+portfolioControllers.controller('ContactCtrl', ['$scope', 'Portfolio', '$sce', '$http',
+  function ($scope, Portfolio, $sce, $http) {
     $scope.title = "Contact";
+    $scope.disabled = false;
     Portfolio.get({dataId: 'contact'}, function (data) {
       $scope.emailAddress = data.email;
       $scope.emailHref = 'mailto:' + data.email;
       $scope.emailHrefTrusted = $sce.trustAsResourceUrl($scope.emailHref);
       $scope.text = data.text;
+      $scope.send = function() {
+        if ($scope.disabled) { return; }
+        $scope.disabled = true;
+        $http.post('/send.php', $scope.msg).
+          success(function(data){
+            $scope.success = true;
+            $scope.msg = {};
+            $scope.disabled = false;
+          }).
+          error(function(data){
+            $scope.httpError = true;
+            $scope.disabled = false;
+          });
+      };
     });
   }
 ]);

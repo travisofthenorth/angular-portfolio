@@ -189,7 +189,7 @@ input, label {
 label {
   margin-bottom: $blueprint-grid-margin / 2;
 }
-input[type="text"], textarea {
+input[type="text"], input[type="email"], textarea {
   border: 1px solid #B0B0B0;
   width: span(4);
   @include box-sizing(border-box);
