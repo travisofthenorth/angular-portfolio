@@ -26,7 +26,7 @@ portfolioApp.config(['$routeProvider',
           controller: routes[i].controller
         });
       }
-      var defaultRoute = portfolioConfig.config.defaultRoute;
+      var defaultRoute = portfolioConfig.defaultRoute;
       $routeProvider.otherwise({ redirectTo: defaultRoute ? defaultRoute : '/work' });
     } else {
       // Default navigation config
